@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* m0+p0+bx */
 }
 
 a {
@@ -102,7 +101,6 @@ body {
     max-width: 160px;
     width: 100%;
     position: absolute;
-    /* poa */
     top: 35px;
     opacity: 0;
     transition: 500ms;
@@ -137,7 +135,6 @@ body {
 .header__content {
     position: relative;
     height: 100vh;
-    /* видимая часть окна задается как vh но означает проценты заполненности окна пользователя */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +149,6 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    /* это 3-измерение (x,y-Z), размещение объектов от пользователя до body сайта */
 }
 
 .header__title {
@@ -202,10 +198,6 @@ body {
 }
 
 .ecommerce__cards {
-    /* position: relative;
-    max-width: 250px;
-    width: 100%;
-    min-height: 170px; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 52px;
@@ -218,7 +210,6 @@ body {
     min-height: 170px;
     position: relative;
     overflow: hidden;
-    /* он скрывает элементы выходящий за блок */
 
 }
 
@@ -281,9 +272,6 @@ body {
 .collection {
     background: url(../img/collection.jpeg) no-repeat center / cover;
     background-attachment: fixed;
-    /* это когда объект фиксирован к юзер интерфейса, следовательно при раскрутке сайта объект не двигается */
-    /* этот код ...attachment:fixed можно просто внедрить в background:
-    background: url() no-repeat center / cover FIXED; */
     min-height: 404px;
     display: flex;
 
@@ -371,7 +359,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* используется для указания способа изменения размера <img> или <Video> в соответствии с его контейнером. */
     top: 0;
     left: 0;
     z-index: -1;
@@ -454,12 +441,8 @@ body {
 }
 
 .card:nth-child(2) .card__title::before {
-    /* .card__title::after */
-    /* after это псевдо-элемент, любое значение начинающий с :: является псевдоэлементным, псевдоэлементы after/before будут добавлять любое значение (текст, аудио, видео и т.д) в контент */
     content: 'OUT OF STOCK';
-    /* свойство content обязательно должен присутствовать в этих псевдоэлементах, иначе псевдоэлементы не появятся */
     display: block;
-    /* эти псевдоэлементы являются строчными, для задавания фиксированного размера необходимо конвертировать на блочный */
     width: 118px;
     background: #4B484B;
     font-family: 'Roboto';
@@ -513,7 +496,6 @@ body {
 }
 
 .footer__menu li:nth-last-child(1) .footer__link {
-    /* nth-last-child будет начинать искать с конца, если напишем один, то первый из последний дочерний элемент  */
     margin-bottom: 0;
 }
 

@@ -4,7 +4,7 @@
     }
 }
 
-@media(max-width: 1200px)/*  */ {
+@media(max-width: 1200px) {
     .container {
         max-width: 960px;
     }
@@ -24,9 +24,7 @@
         width: 200px;
         height: 300px;
         z-index: 3;
-        /* тут подумал что махинации с z-index будет более эффективным чем с opacity или hover */
         transform: translateX(-200%);
-        /* 200% потому-что при 100% и изменений разрешений видно .header__menu */
         transition: 500ms;
     }
 
@@ -37,8 +35,6 @@
     }
 
     .header__icon:focus~.header__menu .header__dropdown-link {
-        /* background: red; */
-        /* бэкграунд использовано для наглядности */
         z-index: 99;
     }
 
@@ -87,7 +83,8 @@
 
 }
 
-@media(max-width: 992px) /*  */ {
+@media(max-width: 992px)
+    {
     .container {
         max-width: 720px;
     }
@@ -106,14 +103,14 @@
 
 }
 
-@media(max-width: 768px)/*  */ {
+@media(max-width: 768px)
+    {
     .container {
         max-width: 540px;
     }
 
     .header__menu {
         background: rgba(0, 0, 0, 0.8);
-        /* совсем черный цвет не идет, сделал с прозрачностью */
     }
 
     .header__content {
@@ -128,22 +125,22 @@
     .ecommerce__cards {
         row-gap: 30px;
     }
-    
+
     .ecommerce__card {
         max-width: 240px;
     }
-    
+
     .cards__block {
         flex-direction: column;
         align-items: center;
     }
 
-    .card__title{
+    .card__title {
         justify-content: center;
     }
 
-    .media_center 
-    /* необходим для выравнивания в центр объектов который text-align: center; не сможет (охватывает с 768px разрешения) */{
+    .media_center
+        {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -151,7 +148,8 @@
     }
 }
 
-@media(max-width: 576px)/*  */ {
+@media(max-width: 576px)
+    {
     .container {
         max-width: 100%;
     }
@@ -165,7 +163,6 @@
         flex-direction: column;
         align-items: center;
         row-gap: 10px;
-        /* просто 10пкс будут более красиво смотреться  */
     }
 
     .header__menu {
@@ -202,21 +199,22 @@
     .footer__top .container {
         flex-direction: column;
         align-items: center;
-        text-align: center; /* просто как я думаю так будет красивее */
+        text-align: center;
     }
 }
 
-@media(max-width: 500px)/*  */ {
+@media(max-width: 500px)
+    {
     .title {
         font-size: 30px;
         line-height: 30px;
     }
 }
 
-@media(max-width: 400px)/*  */ {
+@media(max-width: 400px)
+    {
     .header__nav .container {
         row-gap: 5px;
-        /* просто 5пкс будут более красиво смотреться  */
     }
 
     .title {
@@ -225,21 +223,22 @@
     }
 }
 
-@media(max-width: 350px)/*  */ {
+@media(max-width: 350px)
+    {
     .title {
         font-size: 27px;
         line-height: 25px;
     }
-    
+
     .header__title {
         max-width: 250px;
         font-size: 21px;
     }
-    
+
     .header__desc {
         font-size: 18px;
     }
-    
+
     .header__button {
         width: 100px;
         padding: 12px;
